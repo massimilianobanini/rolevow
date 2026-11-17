@@ -165,12 +165,31 @@ class TechnicalIntegrityTests(unittest.TestCase):
     def test_34_privacy_is_release_blocker(self):
         self.assertIn('before any actual monetary intake',source('PRIVACY.md'))
 
-    def test_35_no_inherited_confidence_italy(self):
+    def test_35_provisional_upstream_confidence_not_english_validation(self):
         s=source('SYSTEM-SUPPORT.md')
         matrix=s.split('## Current English system matrix',1)[1].split('## Runtime routing',1)[0]
-        rows='\n'.join(line for line in matrix.splitlines() if line.lstrip().startswith('|'))
-        for x in ('85%','75%','70%'):
-            self.assertNotIn(x,rows)
+        for name,value in [('D&D 5e 2014 (SRD 5.1)','85%'),('D&D 2024 (SRD 5.2.1)','75%'),('Daggerheart™ (unofficial experimental adapter, SRD 2.0)','70%')]:
+            self.assertIn(f'| **{name}** | **{value}** | **NOT EVALUATED** |',matrix)
+        self.assertIn('not derived from English-language measurements',s)
+        self.assertIn('provisional reference from Divertoscopio',s)
+
+    def test_35a_exact_system_menu_and_default_retained(self):
+        expected='2. **System:** D&D 5e 2014 (SRD 5.1) / D&D 2024 (SRD 5.2.1) / Daggerheart™ (unofficial experimental adapter, SRD 2.0) / Other (state your rules).'
+        for path in ('BOOTSTRAP.md','START-HERE.md','player/PLAYER.md'):
+            self.assertIn(expected,menu(path))
+            self.assertNotIn('SRD 5.1 (default)',menu(path))
+            self.assertIn('Solo, D&D 5e 2014, classic fantasy',menu(path))
+            self.assertNotIn('Game Master → Player (OOC)',menu(path))
+
+    def test_35b_visible_ooc_callout_all_player_routes(self):
+        for path in ('BOOTSTRAP.md','START-HERE.md','core/CORE.md','player/PLAYER.md','RUNTIME-HOTFIX-V0.3.3.md'):
+            s=source(path)
+            self.assertIn('Game Master → Player (OOC)',s,path)
+            self.assertIn('separate Markdown blockquote',s,path)
+            self.assertIn('Keep narration, NPC dialogue and in-fiction consequences outside it',s,path)
+            self.assertIn('OOC question alone pauses fictional time',s,path)
+        self.assertIn('Customize First, Customize in Depth',source('player/PLAYER.md'))
+        self.assertIn('Game Master → Player (OOC)',source('SYSTEM-SUPPORT.md'))
 
     def test_36_protocol_p0_complete(self):
         s=source('protocols/PROTOCOLS.md')

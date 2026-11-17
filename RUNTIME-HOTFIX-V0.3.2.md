@@ -73,7 +73,7 @@ Once `active_system` is established, use **only** the matching adapter; never si
 - **Other / invented system:** use P0-13 source discovery and explicit rulings; no invented confidence score.
 - **Hosted Group:** load `multiplayer/HOSTED-PLAY.md` to govern player identity, knowledge, turns, rolling and privacy; this does not enable multi-account collaboration.
 
-After the system is known, consult the English **`SYSTEM-SUPPORT.md`** when reviewed and available, and show its user-facing support statement **once** at the first relevant opportunity. **Do not copy Italian percentage confidence** into RoleVow. Until independent English evidence exists, label support **unvalidated / not yet rated** and identify whether the reviewed adapter is actually available. If that document does not yet exist, disclose uncertainty without inventing a canonical box. Do not repeat a notice every turn.
+After the system is known, consult the English **`SYSTEM-SUPPORT.md`** when reviewed and available, and show its user-facing support statement **once** at the first relevant opportunity. Display the authorized provisional upstream reference percentage from that table, alongside the explicit statement that independent English actual play has not yet been evaluated. Do not represent an inherited estimate as an English measured result. Render the notice in the text-only **Game Master → Player (OOC)** callout for Player routes, not in the canonical onboarding screen. If that document does not yet exist, disclose uncertainty without inventing a canonical box. Do not repeat a notice every turn.
 
 ## 5. Cross-checks and stop conditions
 

@@ -24,4 +24,4 @@ If the repository cannot be read, open [BOOTSTRAP.md](BOOTSTRAP.md) and supply i
 
 See [STRESS-TEST.md](STRESS-TEST.md), [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md), [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md), [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and [PRIVACY.md](PRIVACY.md). ChatGPT is a separate service with its own limits.
 
-Source baseline: Divertoscopio `41e1e350d3ec72e64dc04a8818a608ddf0d9b4c0` (editorial sync; no inferred English support percentages).
+Source baseline: Divertoscopio `41e1e350d3ec72e64dc04a8818a608ddf0d9b4c0` (editorial sync). Provisional upstream support estimates are identified separately from independent English validation in [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md).

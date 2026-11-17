@@ -1,43 +1,51 @@
-# RoleVow — System support and evidence status (English RC-EN-0.2)
+# RoleVow — System support and evidence status
 
 > **PUBLIC TEST CANDIDATE RC-EN-0.9 — NOT INDEPENDENTLY PLAYTEST VALIDATED.**
-> Scoped adaptation of Divertoscopio `SYSTEM-SUPPORT.md`, commit `08814049a1d655d7ac31028b28239a67b08fe7cf`. This is the proposed **single source of truth** for future public RoleVow support claims; no Italian confidence percentages are inherited.
+> Single source of truth for RoleVow player-facing support estimates. The provisional reference values below are authorized for display, inherited from the [Divertoscopio support matrix](https://github.com/massimilianobanini/divertoscopio/blob/main/SYSTEM-SUPPORT.md) consulted on 17 November 2026, not derived from English-language measurements.
 
-## Current English system matrix — 15 November 2026
+## Current English system matrix — 17 November 2026
 
-| System / edition | RoleVow English support confidence | State |
-|---|---|---|
-| **D&D 5e 2014 / SRD 5.1** | **NOT YET EVALUATED** | Adapter and runtime **drafted privately**, no completed independent English actual-play validation; not publicly available |
-| **D&D 2024 / SRD 5.2.1** | **NOT EVALUATED** | **Private adapter prepared**; not validated in English actual play |
-| **Daggerheart™ (unofficial experimental adapter, SRD 2.0)** | **NOT EVALUATED** | **Private adapter prepared**; English gameplay not independently validated; third-party source terms apply |
-| **Other tabletop RPG systems** | **NOT EVALUATED** | No English adapter available in the candidate |
+| System / edition | Provisional upstream support estimate | Independent English validation | State |
+|---|---:|---|---|
+| **D&D 5e 2014 (SRD 5.1)** | **85%** | **NOT EVALUATED** | Dedicated test adapter; English validation pending |
+| **D&D 2024 (SRD 5.2.1)** | **75%** | **NOT EVALUATED** | Dedicated test adapter; English validation pending |
+| **Daggerheart™ (unofficial experimental adapter, SRD 2.0)** | **70%** | **NOT EVALUATED** | Unofficial experimental test adapter; third-party source terms apply |
+| **Other tabletop RPG systems** | **NOT EVALUATED** | **NOT EVALUATED** | No dedicated English adapter in this candidate |
 
-**Important:** Do not display a confidence percentage such as 85%, 75% or 70% from the Italian Divertoscopio matrix. Those are not measured RoleVow English support scores. This table is a *scope and evidence declaration*, not a numerical quality score. It does not mean 0% fun or 0% technical accuracy; there simply is not validated English evidence for a number.
+The percentages are internal, provisional reference estimates from the Italian project (adapters, stress tests and actual play); they have not been independently established for RoleVow. They are not measured English rules coverage, a probability of fun, a probability of a correct ruling, or guarantee eligibility.
 
 ## Runtime routing — one-time, after the user chooses a system
 
-1. Use `BOOTSTRAP.md` alone before the intent gate, including the immutable six-field **PLAY NOW** screen. **Never put this support notice into that locked screen.**
-2. After a partial/full Play Now answer or after another route has opened the gate, identify `active_system`. An omitted Player system defaults to D&D 5e 2014 / SRD 5.1; respect an explicitly supplied supported system without asking again.
-3. Read this file when available and deliver a short, **one-time, accurate support statement in the first suitable post-selection message**; do not make it another question or delay the first playable scene. State that this is a public technical test, not validated support.
-4. If someone requests a different system, do **not** pretend it has a published RoleVow adapter, auto-fallback silently to 5e, or assign a fake percentage. For an unknown system, explain the absence of a dedicated adapter; for D&D 2014, D&D 2024 or Daggerheart route to its specific test adapter when accessible, without representing test status as validation.
-5. Repeat the support statement only if the system changes, the user asks about support, or a new session requires a material system decision. Do not repeat it every turn or as a persistent warning.
+1. Use `BOOTSTRAP.md` alone before the intent gate. Never add the support notice to the immutable six-field PLAY NOW screen or preload it before the gate.
+2. Identify the active system once chosen or defaulted. Applies to Play Now, Customize First, Customize in Depth, direct starts and relevant resumed games.
+3. Read this table and show the short canonical callout once in the first useful post-selection response, then proceed directly to play or preparation.
+4. For unknown systems, or if the estimate cannot be retrieved, say not evaluated; never invent a percentage or silently switch rulesets.
+5. Repeat only if the active system changes, the user asks for the support status, or a new session requires a material system decision. For human Game Master assistance, use the support text without a Player label.
 
-**Canonical one-time wording for the proposed first English release after all gates:**
+### Canonical Player-facing callout
 
-> **RoleVow system support — [the selected supported system and edition]**
-> **Confidence: not yet evaluated in independent English actual play.** The chosen edition has its own adapter in the expanded test candidate; compatibility does not guarantee a correct ruling or a particular gameplay outcome.
+> **Game Master → Player (OOC)**
+>
+> **RoleVow system support — [SYSTEM]**
+>
+> Current support estimate: **[X%]** (provisional reference from Divertoscopio).
+>
+> *Independent English gameplay validation: not yet evaluated. This is not a guarantee of rules accuracy or enjoyment.*
 
-**Wording for a system outside the candidate:**
+For systems with no estimate:
 
-> **RoleVow system support — [system/edition]**
-> **Not yet evaluated in independent RoleVow English actual play.** An adapter can be prepared without being proven; no automatic conversion is made between rulesets.
+> **Game Master → Player (OOC)**
+>
+> **RoleVow system support — [SYSTEM]**
+>
+> Current support estimate: **Not evaluated.** No reference percentage is available.
 
-## When a future percentage may be published
+Use plain Markdown blockquotes, not interactive controls. Keep the story outside the callout.
 
-A numeric estimate requires: a documented metric definition (mechanical correctness vs onboarding quality vs player enjoyment, not a blended opaque score); test protocol; English human testers/sessions or suitably representative external evidence; sample counts; dates; test configuration; failure counts, correction burden, version lock, reproducibility and limitations. New independent evidence and serious regressions can change the estimate. An internal guess or familiarity of the model with a game is not sufficient.
+## Updating the estimate
 
-If no defensible number exists, continue to publish **NOT EVALUATED**. Never conflate this with a probability of enjoyment, customer satisfaction, correct mechanical decisions or guarantee eligibility.
+The reference estimate may change after a documented upstream update or new adapter evidence. A distinct RoleVow-specific measured estimate requires a documented metric definition, a versioned test protocol, sample sizes and dates, representative independent English tests, failure counts, correction burden and reproducibility limits. Never silently relabel an upstream number as English evidence. A static regression test or this single technical playtest does not establish a percentage.
 
 ## Ownership and release control
 
-Only the reviewed `SYSTEM-SUPPORT.md` should contain RoleVow support confidence values. README, adapter, player, Game Master, runtime and marketing must reference it rather than duplicate stale numbers. The exact dated version must be checked with [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md), [LEGAL-CLAIMS.md](LEGAL-CLAIMS.md), the source adapter and the gate A–H. An update to public support claims is a controlled release change, never an implicit automatic translation from the Italian project.
+Only this document maintains the numeric support matrix. README, router, Player/Master guidance, runtime and marketing should reference it rather than duplicate values. Review against [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md), [LEGAL-CLAIMS.md](LEGAL-CLAIMS.md) and source/adapter evidence when changing the estimate. No change to release approval or monetary guarantee status follows from this display.

@@ -22,6 +22,7 @@ class UpstreamEditorialNamingTests(unittest.TestCase):
     def test_04_no_borrowed_italian_metrics_as_english(self):
         s=src('SYSTEM-SUPPORT.md')
         self.assertIn('NOT EVALUATED',s)
-        self.assertIn('**Daggerheart™ (unofficial experimental adapter, SRD 2.0)** | **NOT EVALUATED**',s)
+        self.assertIn('**Daggerheart™ (unofficial experimental adapter, SRD 2.0)** | **70%** | **NOT EVALUATED**',s)
+        self.assertIn('not derived from English-language measurements',s)
         self.assertIn('Unofficial experimental adapter',src('index.html'))
 if __name__=='__main__':unittest.main()

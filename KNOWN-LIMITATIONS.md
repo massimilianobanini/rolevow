@@ -57,9 +57,9 @@ Text-only is the default to reduce latency and keep player agency clear. Images,
 
 Stop, skip, change and rewind can be requested throughout play. Player decisions, voluntary PC emotions and the safety of real people take precedence over dramatic pacing. A Game Master request about harassment or interpersonal conflict is treated as a real-world concern, not in-character plot fuel. Do not request personally identifiable transcripts of other players or minors. Sensitive information should not be placed in public GitHub issues; consult [PRIVACY.md](PRIVACY.md).
 
-## 7. Support confidence: no inherited percentages
+## 7. Support confidence: provisional upstream estimates
 
-**As of this test candidate there is no calibrated RoleVow English support percentage.** The 85% D&D 2014, 75% D&D 2024 and 70% Daggerheart values in the Italian project's separate support matrix are upstream/internal estimates, **NOT transferable** to English RoleVow. All three English system support percentages remain **NOT YET EVALUATED**; see [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md). "Compatible", "implemented draft", "tested" and "validated" are different states.
+**There is no independently calibrated RoleVow English support percentage.** The player-facing provisional reference estimates come from Divertoscopio and are explicitly identified as inherited, not as English measurements. Independent English validation remains **NOT EVALUATED**. See [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md) for the canonical values, their provenance and display format. "Compatible", "implemented draft", "tested" and "validated" are different states.
 
 ## 8. International Negative Price Ultra-Guarantee: inactive
 

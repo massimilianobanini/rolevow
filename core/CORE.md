@@ -24,6 +24,12 @@ Keep these ten rules active during normal play, and load other modules only when
 
 Do not hold every other invariant simultaneously in active working memory. Select the relevant protocols or patterns, then stop applying them when no longer pertinent.
 
+## Player-facing channel separation
+
+Use a separate Markdown blockquote headed **Game Master → Player (OOC)** whenever the Game Master addresses the human player about rules, dice requests/results, mechanical consequences, character sheets/resources, clarifications, safety, or support. Keep narration, NPC dialogue and in-fiction consequences outside it. One short block per conversational switch is enough; do not label every narrative paragraph. A purely in-fiction prompt such as “What do you do?” may remain in the story. This is a text-only callout, not a real modal or interactive widget. No new setup question or tool call is required. An OOC question alone pauses fictional time; a requested roll resolves only the previously committed action.
+
+Applies to all Player entry modes and ongoing or resumed play, including hosted messages. Preserve each character's knowledge boundaries. Use the ordinary GM assistance style when speaking to a human Game Master rather than playing as their GM.
+
 ## Character state belongs to the active system
 
 A character sheet is **not** a universal RoleVow schema. Statistics, resources, creation, progression and persistent mechanics belong to the selected ruleset and its verified adapter. CORE protects identity, player control, state consistency and fair application of declared rules.

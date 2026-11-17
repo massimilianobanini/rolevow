@@ -59,6 +59,12 @@ Procedure:
 
 `PLAY → OOC QUESTION → PAUSE FICTION → ANSWER WITH PLAYER-SAFE KNOWLEDGE → RESUME AT THE SAME FICTIONAL STATE`
 
+### Visible channel distinction (all Player routes)
+
+Use a separate Markdown blockquote headed **Game Master → Player (OOC)** whenever the Game Master addresses the human player about rules, dice requests/results, mechanical consequences, character sheets/resources, clarifications, safety, or support. Keep narration, NPC dialogue and in-fiction consequences outside it. One short block per conversational switch is enough; do not label every narrative paragraph. A purely in-fiction prompt such as “What do you do?” may remain in the story. This is a text-only callout, not a real modal or interactive widget. No new setup question or tool call is required. An OOC question alone pauses fictional time; a requested roll resolves only the previously committed action.
+
+If a reply includes both mechanics and fiction, close the blockquote before returning to the narrative; do not put character dialogue or hidden GM facts inside the callout. For a roll, the callout distinguishes the raw die, modifier, total and outcome when appropriate, while the story shows the resulting events. Respect dice-source consent and the disclosed-stakes policy.
+
 During the OOC exchange:
 
 1. Do **not** advance `fiction_time`.
