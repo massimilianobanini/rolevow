@@ -77,6 +77,8 @@ class HostedReference:
             raise ContractViolation("Out-of-character pause freezes fiction and decisions.")
         if not expected_participants.issubset(self.players):
             raise ContractViolation("Unknown participant in the commit window.")
+        if any(self.players[p].absent for p in expected_participants):
+            raise ContractViolation("Absent PC cannot commit an action without renewed attribution.")
         missing = expected_participants - set(self.pending_intents)
         if missing:
             raise ContractViolation("Unresolved simultaneous choices: " + ", ".join(sorted(missing)))
@@ -88,6 +90,8 @@ class HostedReference:
     def roll(self, player_id: str, *, human_roll: int | tuple[int, int] | None = None,
              ai_authorized: bool = False) -> dict[str, Any]:
         actor = self._require_actor(player_id)
+        if actor.absent:
+            raise ContractViolation("Absent PC cannot make a new roll.")
         if self.ooc_paused:
             raise ContractViolation("A gameplay roll cannot advance an OOC pause.")
         if human_roll is None and not ai_authorized:
@@ -128,7 +132,7 @@ class HostedReference:
         self.ooc_paused = False
 
     def move_fiction_time(self, minutes: int) -> None:
-        if self.ooc_paused or minutes < 0:
+        if self.ooc_paused or type(minutes) is not int or minutes < 0:
             raise ContractViolation("No time advances during an OOC pause, or backwards.")
         self.fictional_time += minutes
 
@@ -157,6 +161,8 @@ def dnd2024_grapple_dc(strength_modifier: int, proficiency_bonus: int) -> int:
 
 
 def half_caster_slot_index(levels: list[int], *, ruleset: Ruleset) -> int:
+    if any(type(level) is not int or not 1 <= level <= 20 for level in levels) or sum(levels) > 20:
+        raise ContractViolation("Invalid class levels for the reference calculation.")
     if ruleset == Ruleset.DND_2014:
         return sum(level // 2 for level in levels)
     if ruleset == Ruleset.DND_2024:
@@ -165,14 +171,14 @@ def half_caster_slot_index(levels: list[int], *, ruleset: Ruleset) -> int:
 
 
 def dnd2014_ordinary_check(d20: int, bonus: int, dc: int) -> bool:
-    if not (1 <= d20 <= 20):
+    if type(d20) is not int or not (1 <= d20 <= 20):
         raise ContractViolation("Invalid d20 result.")
     return d20 + bonus >= dc  # Natural 1/20 are NOT universally automatic on 2014 checks.
 
 
 def daggerheart_duality(hope_die: int, fear_die: int, modifier: int, difficulty: int,
                          *, roll_type: str = "ACTION") -> dict[str, Any]:
-    if not (1 <= hope_die <= 12 and 1 <= fear_die <= 12):
+    if type(hope_die) is not int or type(fear_die) is not int or not (1 <= hope_die <= 12 and 1 <= fear_die <= 12):
         raise ContractViolation("Each Duality die must be d12, 1..12.")
     if roll_type not in {"ACTION", "REACTION"}:
         raise ContractViolation("Use a separate source-defined procedure for Group/Tag Team rolls.")

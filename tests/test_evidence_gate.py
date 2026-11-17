@@ -14,7 +14,7 @@ def passing(id='T03'):
     x=placeholder()
     x[int(id[-2:])-1]={
         'id':id,'status':'PASS','mode':'independent_fresh_chat',
-        'candidate_sha256':'verified_sha_512','source_files':['BOOTSTRAP.md'],
+        'candidate_sha256':'a'*64,'source_files':['BOOTSTRAP.md'],
         'user_input':'English case prompt','assistant_output':'Observed English actual output',
         'reviewer':'human independent reviewer','reviewer_verdict':'PASS',
         'privacy_reviewed':True,'human_participants':2,'participant_consent':True,
