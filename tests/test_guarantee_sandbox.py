@@ -1,0 +1,8 @@
+import unittest
+from guarantee.manual_gate import decide
+class GuaranteeSandboxTests(unittest.TestCase):
+    def test_synthetic_decisions(self):
+        base=dict(action='RESERVE',paid=0,binding=0,month=0,net=100,gross=100,reserve=0,eligible=True,route=True,duplicate=False,earlier=False,intake=True,quote=True)
+        cases=[({},'RESERVE_NOW'),({'paid':9800,'binding':100},'RESERVE_NOW'),({'paid':9800,'binding':100,'gross':101},'STOP_LIFETIME'),({'month':1900},'RESERVE_NOW'),({'month':1950},'RESERVE_QUEUE'),({'gross':2001},'STOP_ROUTE_COST'),({'net':99},'STOP_NET'),({'gross':99},'STOP_ROUTE_COST'),({'duplicate':True},'STOP_DUPLICATE'),({'earlier':True},'WAIT_FIFO'),({'eligible':False},'STOP_ELIGIBILITY'),({'route':False},'STOP_ROUTE'),({'intake':False},'STOP_CLOSED'),({'gross':100.5},'STOP_BAD_INPUT'),({'paid':-1},'STOP_BAD_INPUT'),({'quote':False},'STOP_QUOTE'),({'action':'PAY','binding':150,'reserve':150,'gross':130,'month':1800,'intake':False},'PAY_READY'),({'action':'PAY','binding':150,'reserve':150,'gross':130,'month':1900},'WAIT_MONTH'),({'action':'PAY','binding':150,'reserve':150,'gross':151},'STOP_REQUOTE'),({'action':'PAY'},'STOP_NO_RESERVE'),({'action':'PAY','binding':150,'reserve':150,'duplicate':True},'STOP_DUPLICATE'),({'action':'PAY','binding':150,'reserve':150,'earlier':True},'WAIT_FIFO'),({'action':'PAY','paid':9900,'binding':150,'reserve':150},'STOP_LEDGER'),({'action':'PAY','binding':100,'reserve':150},'STOP_LEDGER')]
+        for num,(patch,expected) in enumerate(cases,1):
+            with self.subTest(case=num): self.assertEqual(decide(**(base|patch)),expected)

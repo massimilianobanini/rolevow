@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RoleVow is a pre-release AI-assisted tabletop RPG tool for D&D 2014, D&D 2024 and Daggerheart, with a hosted-group concept. Available for controlled technical testing; not validated.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#11151c">
+  <title>RoleVow — Technical Playtest Preview</title>
+  <link rel="stylesheet" href="landing.css">
+  <script src="landing.js" defer></script>
+</head>
+<body data-release-status="pre-release">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="wordmark" href="#top" aria-label="RoleVow home">RoleVow</a>
+      <nav aria-label="Main navigation">
+        <a href="#systems">Systems</a>
+        <a href="#how">How it works</a>
+        <a href="#limits">Limitations</a>
+      </nav>
+      <a class="button button-secondary button-small" href="https://github.com/massimilianobanini/rolevow" rel="noopener noreferrer">Development status</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <p class="status">Pre-release technical playtest — not validated</p>
+      <h1 id="hero-title">Your tabletop game. Your choices. An AI assistant when you need one.</h1>
+      <p class="battlecry">Play your role, now it's your roll. Our vow? To make you say wow.</p>
+      <p class="lede">RoleVow is the planned English edition of <a href="https://github.com/massimilianobanini/divertoscopio">Divertoscopio</a>. It assists Players and Game Masters with existing tabletop RPG rules. It is not a new ruleset or an official product of any game publisher.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://github.com/massimilianobanini/rolevow">View public repository</a>
+        <a class="button button-secondary" href="#how">How launch will work</a>
+      </div>
+      <p class="subnote">Use the source repository for controlled tests. Do not expect any compensation.</p>
+    </section>
+    <section class="section soft" id="systems" aria-labelledby="systems-title">
+      <div class="wrap">
+        <h2 id="systems-title">Three distinct tabletop systems in the test candidate</h2>
+        <p>Dedicated adapters have been prepared, but <strong>their English gameplay has not yet passed independent human tests</strong>.</p>
+        <div class="cards">
+          <article class="card"><h3>D&D 5e (2014)</h3><p>SRD 5.1 procedures and character state, without mixing the revised 2024 rules.</p></article>
+          <article class="card"><h3>D&D (2024)</h3><p>SRD 5.2.1 rules, action economy, character options and edition-specific checks.</p></article>
+          <article class="card"><h3>Daggerheart™</h3><p><strong>Unofficial experimental adapter, refined based on player feedback.</strong> Built around SRD 2.0 and the official errata. English independent playtests are still needed; no publisher endorsement is implied.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title">How RoleVow is intended to work</h2>
+        <div class="cards">
+          <article class="card"><h3>Player</h3><p>Choose Play Now, Customize First or Customize in Depth; your character's voluntary actions remain yours. Choose your dice source before the first character roll.</p></article>
+          <article class="card"><h3>Game Master</h3><p>Get concise help during play, or more deliberate preparation and a source-conscious rule check.</p></article>
+          <article class="card"><h3>Hosted group</h3><p>One human host relays multiple players' choices into a single ChatGPT conversation. It is <strong>not</strong> a synchronized multi-account game room and does not offer private per-player channels.</p></article>
+        </div>
+        <div class="setup" aria-labelledby="future-title">
+          <h3 id="future-title">Start a technical playtest</h3>
+          <p>The test start sequence is to copy the official repository URL plus “Let's begin” into a new ChatGPT conversation. A ChatGPT plan or browser setting cannot guarantee that repository instructions will be retrieved or followed correctly.</p>
+          <label for="starter-text">Playtest start message</label>
+          <textarea id="starter-text" readonly rows="3" spellcheck="false">https://github.com/massimilianobanini/rolevow
+
+Let's begin.</textarea>
+          <button class="button button-primary" id="copy-starter" type="button" aria-describedby="release-status">Copy the test start message</button>
+          <p id="release-status" class="subnote" role="status" aria-live="polite">Use a fresh conversation. The guarantee is not active.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section soft" id="limits" aria-labelledby="limits-title">
+      <div class="wrap limits">
+        <h2 id="limits-title">Limits we won't hide</h2>
+        <ul>
+          <li>No independent English human-gameplay validation has been completed for this candidate.</li>
+          <li>RoleVow's international Negative Price Ultra-Guarantee is <strong>not active</strong>. There are no approved international claims, payments or compensation terms.</li>
+          <li>ChatGPT is a separate service with its own account access, usage limits and privacy policy.</li>
+          <li>Published adventures, non-SRD rules and media must be sourced and used lawfully; no false publisher endorsement is claimed.</li>
+          <li>There is no verified full real-time multi-account multiplayer mode.</li>
+        </ul>
+        <p><a href="https://github.com/massimilianobanini/rolevow">Review the current public development status</a>.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>RoleVow · pre-release candidate</span>
+      <span>No cookies, analytics or third-party embeds are included in this static source draft.</span>
+      <a href="https://github.com/massimilianobanini/rolevow">Repository</a>
+    </div>
+  </footer>
+</body>
+</html>
