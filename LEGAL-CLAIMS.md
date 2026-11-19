@@ -1,6 +1,6 @@
 # RoleVow — Rights and reporting
 
-This is a pre-release technical playtest, not an offer of payment. The Negative Price Ultra-Guarantee is not active. Independent English actual play has not yet established reliability or measurable support levels. No assertion of global priority, endorsement, or guaranteed enjoyment is made.
+The game remains a technical playtest; the Negative Price Ultra-Guarantee is active separately, subject to its [terms](guarantee/TERMS.md). It provides a symbolic reputational indemnity for eligible dissatisfied users. Independent English actual play has not yet established reliability or measurable support levels. No assertion of global priority, endorsement, or guaranteed enjoyment is made.
 
 RoleVow is the English edition of Divertoscopio, not an official game-publisher product. See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md), [LICENSE](LICENSE), [LICENSE-DOCS.md](LICENSE-DOCS.md), [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md), and [PRIVACY.md](PRIVACY.md).
 
