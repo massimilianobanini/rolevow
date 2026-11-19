@@ -1,7 +1,7 @@
 # RoleVow — Negative Price Ultra-Guarantee
-**RV-TERMS-1.0 — Pre-launch information. NOT ACTIVE.**
+**RV-TERMS-1.0 — Effective upon official public opening of the programme.**
 
-The monetary programme is not accepting applications. This page describes the intended terms and is not a currently available offer. Do not submit claim or payment data until an effective date and the official active form are announced.
+The terms apply when the official RoleVow feedback form opens for indemnity requests. Check the [official project page](../README.md) for the live status and form link before relying on the guarantee.
 
 ## What the guarantee means
 RoleVow is free to use. ChatGPT and other independent services may have their own fees and limits. When the monetary programme is active, if you genuinely use RoleVow and are dissatisfied, you may apply for a symbolic €1 net reputational indemnity. The indemnity makes the operator financially accountable for genuine dissatisfaction: an extreme form of risk reversal. It is a gesture of reputational accountability, not a reward for participation or reviews. No purchase, subscription, public review or marketing consent is required. Enjoyment cannot be guaranteed.
@@ -22,4 +22,4 @@ The programme has a €20 gross calendar-month spending ceiling and a €100 gro
 Intake may close when funding is fully spent/committed or insufficient for a further minimum payment, or may be suspended for a material technical, fraud, legal or security issue. Closure is prospective: it does not remove valid prior rights. Pending submissions made before closure will be reviewed under the applicable terms. RoleVow remains free. Ordinary feedback can still be sent to the project contact when the form is temporarily closed. Ineligible or incomplete requests receive an explanation or proportionate clarification request. You can ask for a correction or human review. No payment is automatic, and no one is required to publish praise, criticism or a testimonial.
 
 ## Operator, privacy and applicable rights
-Operator: Massimiliano Banini (Italy). Contact: massimiliano.banini@yahoo.it. Read the [accompanying RoleVow privacy notice](PRIVACY.md) before submitting information. Public reporting uses aggregate data, not claimants' identities or payment details. Nothing in these terms limits mandatory consumer or data-protection rights. Changes apply prospectively and will be identified by version and effective date. The effective date and ACTIVE status will be announced before monetary intake opens.
+Operator: Massimiliano Banini (Italy). Contact: massimiliano.banini@yahoo.it. Read the [accompanying RoleVow privacy notice](PRIVACY.md) before submitting information. Public reporting uses aggregate data, not claimants' identities or payment details. Nothing in these terms limits mandatory consumer or data-protection rights. Changes apply prospectively and will be identified by version and effective date. The effective date and ACTIVE status are announced on the official project page.
