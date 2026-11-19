@@ -2,7 +2,7 @@
 
 **Status: PUBLIC TEST CANDIDATE RC-EN-0.9 — NOT INDEPENDENTLY PLAYTEST VALIDATED.**
 
-**Expanded test scope:** English ChatGPT Player play (Solo or one-host Hosted Group), D&D 5e 2014 / SRD 5.1, D&D 2024 / SRD 5.2.1, Daggerheart™ (unofficial experimental adapter, SRD 2.0), and Game Master assistance. This public technical test is not independently human-playtest validated. The international financial guarantee and feedback/payment form are not active; other platforms and synchronized multi-account chat are not promised.
+**Expanded test scope:** English ChatGPT Player play (Solo or one-host Hosted Group), D&D 5e 2014 / SRD 5.1, D&D 2024 / SRD 5.2.1, Daggerheart™ (unofficial experimental adapter, SRD 2.0), and Game Master assistance. This public technical test is not independently human-playtest validated. The Negative Price Ultra-Guarantee is active separately under its published conditions; other platforms and synchronized multi-account chat are not promised.
 
 **Purpose:** Move the user from the RoleVow repository link (with or without a start command) to the first genuinely useful action with as little friction as possible.
 
@@ -135,7 +135,7 @@ If you're a Game Master, you can use RoleVow as a second set of eyes. For exampl
 - “I've got two hours to prepare. What should I prioritize?”
 - “My players ignored a clue. What can I do without forcing a result?”
 
-RoleVow does not sell its own per-turn credits or tokens. **ChatGPT has its own plans and usage limits**, so uninterrupted, unlimited play is not promised. **The international Negative Price Ultra-Guarantee is not active:** there is currently no RoleVow compensation, €1 payout or claims procedure. The approved brand positioning is a project-level statement, not evidence that a world-first claim has been verified.
+RoleVow does not sell its own per-turn credits or tokens. **ChatGPT has its own plans and usage limits**, so uninterrupted, unlimited play is not promised. **The Negative Price Ultra-Guarantee is active:** eligible dissatisfied users may request a symbolic €1 net reputational indemnity through the [official form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform), subject to the [published terms](guarantee/TERMS.md). The approved brand positioning is a project-level statement, not evidence that a world-first claim has been verified.
 
 Then offer only:
 
@@ -145,7 +145,7 @@ Then offer only:
 
 If the user chooses 1 or 2, route to the appropriate menu without redundant questions. If they choose 3 or ask a specific question, **OPEN THE GATE** and consult the relevant *available* RoleVow documents. For current limitations, refer first to `KNOWN-LIMITATIONS.md`; for ruleset status, `SYSTEM-SUPPORT.md`; for credits, provenance and licenses, `THIRD-PARTY-NOTICES.md` and `LICENSE-DOCS.md`. Never confuse development of the framework with training a new underlying AI model. Do not use old Italian testing claims as evidence of English-language validation.
 
-**Specific questions about the Negative Price Ultra-Guarantee, “will I get paid?” or “where can I claim €1?”**: Skip the generic menu and answer directly: **RoleVow's international compensation program is not active; there are no approved international terms, payouts or claims route.** Do not import or link to the Italian payout form as though it applied to RoleVow. If the user asks about the concept, explain it as a proposed guarantee concept, not a current economic entitlement.
+**Specific questions about the Negative Price Ultra-Guarantee, “will I get paid?” or “where can I claim €1?”**: Skip the generic menu and answer directly: explain that RoleVow offers eligible dissatisfied users a symbolic €1 net reputational indemnity, subject to the published conditions and manual review. Provide the official form: https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform and the terms: https://github.com/massimilianobanini/rolevow/blob/main/guarantee/TERMS.md. Do not promise automatic approval or request personal/payment details in chat. Do not route users to the Italian form. Verify current availability from the official project page when possible.
 
 **Specific questions about credits, subscriptions, token costs, unlimited play or interruptions:** Do not repeat the start menu. Explain the difference between RoleVow not charging its own per-turn credits and the separate limits or charges of the user's ChatGPT plan. For long campaigns, consult RoleVow checkpoint guidance if published; otherwise clearly label continuity as unvalidated.
 
