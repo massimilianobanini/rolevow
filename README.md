@@ -20,7 +20,7 @@ If the repository cannot be read, open [BOOTSTRAP.md](BOOTSTRAP.md) and supply i
 
 ## Test the Negative Price Ultra-Guarantee
 
-**No monetary programme is active; real compensation is not yet available.** Only synthetic inputs are permitted in the [guarantee sandbox](guarantee/README.md). Do not enter real names, payment details, or chat transcripts. The live form and payout records are not part of this repository.
+The Negative Price Ultra-Guarantee expresses the operator’s commitment to genuine user satisfaction through a symbolic €1 net reputational indemnity, subject to its conditions. **The programme is not active yet.** Read the pre-launch [terms](guarantee/TERMS.md) and [privacy notice](guarantee/PRIVACY.md). Only synthetic inputs are permitted in the [guarantee sandbox](guarantee/README.md). Do not enter real names, payment details, or chat transcripts. The live form and payout records are not part of this repository.
 
 See [STRESS-TEST.md](STRESS-TEST.md), [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md), [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md), [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and [PRIVACY.md](PRIVACY.md). ChatGPT is a separate service with its own limits.
 
