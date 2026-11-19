@@ -31,6 +31,9 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html landing.css landing.js _site/
+          mkdir -p _site/assets/brand
+          test -s assets/brand/rolevow-visual-hammer-transparent.png
+          cp assets/brand/rolevow-visual-hammer-transparent.png _site/assets/brand/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

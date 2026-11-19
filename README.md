@@ -1,5 +1,7 @@
 # RoleVow
 
+**The first Simple Tabletop RPG Tool, with the Negative Price Ultra-Guarantee.**
+
 **Play your role, now it's your roll. Our vow? To make you say wow.**
 
 > **Status: Pre-release — RC-EN-0.9 public technical playtest.** The source is available for controlled tests; it is not yet ready for public use as a validated product.
