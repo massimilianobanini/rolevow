@@ -10,6 +10,8 @@ RoleVow is the English-language edition of [Divertoscopio](https://github.com/ma
 
 ## Start a test
 
+[Open the RoleVow landing page](https://massimilianobanini.github.io/rolevow/) for the guided start, FAQ and manifesto. The landing page does not directly collect feedback or personal details.
+
 Open a new ChatGPT conversation and paste:
 
 ```text

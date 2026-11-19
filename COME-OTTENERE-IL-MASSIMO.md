@@ -1,9 +1,9 @@
 # Get the Most Out of RoleVow
 
 > **PUBLIC TEST CANDIDATE RC-EN-0.9 — NOT INDEPENDENTLY PLAYTEST VALIDATED.**
-> Source: Divertoscopio `COME-OTTENERE-IL-MASSIMO.md` at commit `08814049a1d655d7ac31028b28239a67b08fe7cf`, source Git blob `0af45c94582bdb01335d041e93771ef6771519dd`. Adapted for RoleVow's three-system English scope and hosted multiplayer. This is an optional user guide, not a replacement for BOOTSTRAP/CORE/PLAYER or an active guarantee.
+> Source: Divertoscopio `COME-OTTENERE-IL-MASSIMO.md` at commit `08814049a1d655d7ac31028b28239a67b08fe7cf`, source Git blob `0af45c94582bdb01335d041e93771ef6771519dd`. Adapted for RoleVow's three-system English scope and hosted multiplayer. This is an optional user guide, not a replacement for BOOTSTRAP/CORE/PLAYER or an amendment to the published guarantee terms.
 
-**You do not need to study this guide to start.** RoleVow is an AI-assisted companion for existing tabletop RPGs. The source is available for controlled technical playtests, not a validated public launch. No financial compensation programme is active.
+**You do not need to study this guide to start.** RoleVow is an AI-assisted companion for existing tabletop RPGs. The source is available for controlled technical playtests, not a validated public launch. The Negative Price Ultra-Guarantee is active separately under its [published terms](guarantee/TERMS.md).
 
 The objective is **less friction on the way to an enjoyable session, without taking over what you like doing yourself**. These are optional practices, not prerequisites or guarantees of improvement.
 
@@ -19,9 +19,9 @@ The source framework uses roughly 1 minute, 5 minutes and 15+ minutes as **setup
 
 ## 1. Start without needless setup
 
-**For a player, after an approved public release:** open ChatGPT and provide the official RoleVow repository URL `https://github.com/massimilianobanini/rolevow`, then write **Let's begin.** When the files are readable, choose **I'm a Player → Play Now**. The six fields are play mode, system, setting, tabletop RPG experience, tone and risk, in that order. Reply to as many as you wish or say **Choose everything for me**. The first default is D&D 5e 2014, not the only supported system: English V1 is intended also to cover D&D 2024 and the unofficial experimental Daggerheart adapter, subject to the same unpublished release checks as other source-dependent content. You can use natural language to describe what your character does; menu suggestions never restrict your choices.
+**For a player, during the public technical playtest:** open ChatGPT and provide the official RoleVow repository URL `https://github.com/massimilianobanini/rolevow`, then write **Let's begin.** When the files are readable, choose **I'm a Player → Play Now**. The six fields are play mode, system, setting, tabletop RPG experience, tone and risk, in that order. Reply to as many as you wish or say **Choose everything for me**. The first default is D&D 5e 2014, not the only supported system: English V1 is intended also to cover D&D 2024 and the unofficial experimental Daggerheart adapter, subject to current limitations and independent English validation. You can use natural language to describe what your character does; menu suggestions never restrict your choices.
 
-**For a Game Master, after release:** describe a concrete problem rather than requesting a whole campaign unless that is what you want. Example: “I'm a Game Master. My players may get stuck in an investigation tonight. Ask only for details you need, then offer two or three rescue approaches that do not rewrite my prepared mystery.” You keep final authority over fiction, house rules and what you enjoy preparing. Use FAST LIVE for concise in-session assistance.
+**For a Game Master, during the public technical playtest:** describe a concrete problem rather than requesting a whole campaign unless that is what you want. Example: “I'm a Game Master. My players may get stuck in an investigation tonight. Ask only for details you need, then offer two or three rescue approaches that do not rewrite my prepared mystery.” You keep final authority over fiction, house rules and what you enjoy preparing. Use FAST LIVE for concise in-session assistance.
 
 For a controlled test, use the repository URL and start command from README. Retrieval and gameplay quality are not guaranteed.
 
@@ -103,4 +103,4 @@ For active system support evidence, see [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md), 
 
 ## Final rule
 
-**Getting the most out of RoleVow is not maximizing the amount of AI you use.** It is getting useful assistance without losing your own play, creativity, choices and control. This optional guide does not change rules, activate any compensation scheme, or claim that the unreleased English tool has already been validated.
+**Getting the most out of RoleVow is not maximizing the amount of AI you use.** It is getting useful assistance without losing your own play, creativity, choices and control. This optional guide does not change rules, change the active Negative Price Ultra-Guarantee terms, or claim that the English test candidate has already been validated.
