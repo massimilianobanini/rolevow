@@ -19,8 +19,8 @@ The complete English test candidate is published for controlled technical playte
 | Hosted multiplayer | Single human host relays all players through one ChatGPT chat | **PRIVATE CONTRACT / NOT HUMAN-TESTED**; no synchronized multi-account play promised |
 | Screens, images and media | Text-first; other media only on explicit request when platform supports them | **No automatic media or map promise** |
 | Runtime V0.4 | Ten design candidates + four research-only ideas | **Draft adaptations; NOT FUNCTIONALLY VALIDATED** |
-| Negative Price Ultra-Guarantee | International scheme not activated | **NO MONEY, PAYOUT, CLAIM, TERMS OR COMPENSATION OFFER** |
-| Feedback | No verified public English form | **Do not send to Italian Form or claim a functioning English survey** |
+| Negative Price Ultra-Guarantee | **ACTIVE since 19 November 2026** under RoleVow's [published terms](guarantee/TERMS.md) | Conditional €1 net indemnity for eligible dissatisfied adults; official English form, manual review and funding limits apply |
+| Feedback | [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform) is published | Optional; see [privacy notice](guarantee/PRIVACY.md), never use the Italian claim form or request payout data in chat |
 
 ## 1. What this does and does not do
 
@@ -61,9 +61,9 @@ Stop, skip, change and rewind can be requested throughout play. Player decisions
 
 **There is no independently calibrated RoleVow English support percentage.** The player-facing provisional reference estimates come from Divertoscopio and are explicitly identified as inherited, not as English measurements. Independent English validation remains **NOT EVALUATED**. See [SYSTEM-SUPPORT.md](SYSTEM-SUPPORT.md) for the canonical values, their provenance and display format. "Compatible", "implemented draft", "tested" and "validated" are different states.
 
-## 8. International Negative Price Ultra-Guarantee: inactive
+## 8. International Negative Price Ultra-Guarantee: active, conditional
 
-No English-language compensation programme or legally reviewed claims/payout path is active. There is no public offer to pay someone if the game disappoints them. The Italian €1 process, its eligibility, forms and records are **not** RoleVow terms. Do not represent the experimental positioning phrase "the first" as an established priority claim. Any future guarantee needs jurisdiction-specific review, terms, funding/fulfilment, privacy notices and operational tests **before** public advertising or collection.
+The RoleVow English programme is **ACTIVE since 19 November 2026 (Europe/Rome)**, as announced in the [README](README.md). Eligible adults who genuinely used RoleVow and are dissatisfied may request a symbolic €1 NET indemnity through the [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform), under its [published terms](guarantee/TERMS.md), [privacy notice](guarantee/PRIVACY.md) and current [status](guarantee/STATUS.md). One payment per person across RoleVow and Divertoscopio; €20/month gross and €100 lifetime gross all-in caps (fees and currency conversion included). Claims undergo manual review, funding checks and verification of lawful workable payment routes; neither eligibility nor payment is automatic. The Italian programme, its form and its eligibility rules are separate. Do not represent the experimental positioning phrase "the first" as an established priority claim. The active programme does not establish English gameplay validation, guaranteed enjoyment or worldwide market priority. Current terms, intake availability and payment methods must be checked before making specific commitments.
 
 ## 9. Required regression evidence before release
 
@@ -76,7 +76,7 @@ No English-language compensation programme or legally reviewed claims/payout pat
 7. Master emergency and published-adventure query → usable help, appropriate source fidelity and no leaked licensed material.
 8. Out-of-character questions → fiction paused; no lost time or resources; original decision point preserved.
 9. Multi-turn state and V0.4 candidate features → causal integrity, knowledge separation, no false retcon.
-10. Privacy/legal/guarantee copy → no active international payout, no private links, correct notices, no unverified superiority claims.
+10. Privacy/legal/guarantee copy → accurate active conditional English guarantee and official form; no automatic payout promises, Italian form, private links or unverified superiority claims.
 
 **All release-critical English actual-play tests and independent semantic QA are still OPEN.** Static coverage of files or headings is not a PASS for any gameplay test.
 

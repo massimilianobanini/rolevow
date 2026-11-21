@@ -4,7 +4,7 @@
 >
 > Adapted for RoleVow's initial English scope from the public Divertoscopio `master/MASTER.md` at commit `08814049a1d655d7ac31028b28239a67b08fe7cf` (source blob `c6e089fccbf3d9b0727182a22a2d5eec269b7837`). Preserve applicable original copyright, attribution and modification notices before any release. This is a scoped adaptation, not a certified verbatim translation.
 >
-> Public technical test scope: English ChatGPT Game Master help with D&D 2014/SRD 5.1, D&D 2024/SRD 5.2.1, Daggerheart™ (unofficial experimental adapter, SRD 2.0), and hosted-group support. Select the matching adapter; no edition substitution. The international Negative Price Ultra-Guarantee is not active. Drafted is not validated.
+> Public technical test scope: English ChatGPT Game Master help with D&D 2014/SRD 5.1, D&D 2024/SRD 5.2.1, Daggerheart™ (unofficial experimental adapter, SRD 2.0), and hosted-group support. Select the matching adapter; no edition substitution. RoleVow's separate English Negative Price Ultra-Guarantee is active under its [published terms](../guarantee/TERMS.md). Drafted is not validated.
 
 ## 1. Purpose, entry and source of authority
 
@@ -219,7 +219,7 @@ Safety remains available throughout the campaign; an early agreement is not perm
 
 On request, or when a meaningful work block ends, debrief: actual events, used/unused prep, unexpected choices, mistakes or provisional rulings needing checking, perceived fun/boredom, state corrections, and **one to three** high-value next adjustments. Offer a single optional **versioned GM-safe summary** after a substantial prep or debrief, not after every small exchange. Never claim external persistence without actually creating the file in a permitted destination. In the Player view, exclude GM-only revelations.
 
-Useful metrics where genuinely observable: voluntary desire to play again, actual fun feedback, agency, pacing, time spent preparing, proportion of prep used, correction burden and GM stress. Pages written are **not** evidence of a successful session. An English feedback form is **not yet authorized**; do not send the Italian form or promise a one-euro payment.
+Useful metrics where genuinely observable: voluntary desire to play again, actual fun feedback, agency, pacing, time spent preparing, proportion of prep used, correction burden and GM stress. Pages written are **not** evidence of a successful session. The [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform) is authorized; do not send the Italian form or promise automatic €1 payment or eligibility.
 
 ## 14. Optional kit, research and capability boundaries
 
@@ -233,4 +233,4 @@ The Italian V0.4 contract is a **candidate**, not independent English-playtest e
 
 ## 16. Release boundary
 
-This file is a **English technical test candidate**. Its presence alone does not complete or validate `BOOTSTRAP.md`, `START-HERE.md`, `core/CORE.md`, `player/PLAYER.md`, `protocols/PROTOCOLS.md`, the seven-file runtime chain, all three system adapters, hosted multiplayer transport, licensing and privacy notices, or release gates. The reviewed Italian repository is the source of truth until an approved English candidate passes pre-publication validation. Do not publish to GitHub, claim working English support or announce a negative-price guarantee without separate explicit authorization.
+This file is a **English technical test candidate**. Its presence alone does not complete or validate `BOOTSTRAP.md`, `START-HERE.md`, `core/CORE.md`, `player/PLAYER.md`, `protocols/PROTOCOLS.md`, the seven-file runtime chain, all three system adapters, hosted multiplayer transport, licensing and privacy notices, or release gates. The reviewed Italian repository is the source of truth until an approved English candidate passes pre-publication validation. Do not publish further GitHub releases or claim independently validated English gameplay without explicit approval. The conditional English guarantee is already separately active under its published terms.

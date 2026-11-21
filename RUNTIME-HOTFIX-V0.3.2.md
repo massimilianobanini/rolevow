@@ -4,7 +4,7 @@
 >
 > Adaptation of the public Italian Divertoscopio `RUNTIME-HOTFIX-V0.3.2.md` at commit `08814049a1d655d7ac31028b28239a67b08fe7cf`, source blob `05bddbfa8b257c7d220aae747ea4461b02c6cdfe`. Preserve the original project's required copyright, source and change attribution when released. This router does **not** replace the seven runtime contracts it references.
 
-This path remains named `RUNTIME-HOTFIX-V0.3.2.md` to preserve links from `START-HERE.md`, even though it routes across V0.3.2–V0.3.6 and the V0.4 candidate. The RoleVow public technical test candidate targets ChatGPT, Solo/one-host Hosted Group and three **separate** ruleset adapters: D&D 2014/SRD 5.1, D&D 2024/SRD 5.2.1 and unofficial Daggerheart/SRD 2.0. None is validated in English actual play; Daggerheart is an unofficial experimental adapter. Synchronous multi-account chat, other platforms and international compensation are not active.
+This path remains named `RUNTIME-HOTFIX-V0.3.2.md` to preserve links from `START-HERE.md`, even though it routes across V0.3.2–V0.3.6 and the V0.4 candidate. The RoleVow public technical test candidate targets ChatGPT, Solo/one-host Hosted Group and three **separate** ruleset adapters: D&D 2014/SRD 5.1, D&D 2024/SRD 5.2.1 and unofficial Daggerheart/SRD 2.0. None is validated in English actual play; Daggerheart is an unofficial experimental adapter. Synchronous multi-account chat and other platforms remain unsupported; the separate conditional English guarantee is active under [published terms](guarantee/TERMS.md).
 
 ## 1. LOAD GATE — do not preload before the first useful intent
 
@@ -85,6 +85,6 @@ C. **2014 mechanics:** no universal automatic success/failure on natural 1/20 fo
 
 D. **World/canon:** player hypotheses do not become facts by mention. Do not retcon prepared truths to fit a die roll. No hidden fudging, unearned plot armor, forced outcomes or player-character voluntary choices made by the AI. Keep OOC pauses and known facts separate from fictional time.
 
-E. **Safety and privacy:** stop/skip/change/rewind remain available; GM secrets stay out of Player checkpoints; no Italian personal-data collection form, €1 payment link or unsupported guarantee. Links to public materials do not authorize redistribution of proprietary books.
+E. **Safety and privacy:** stop/skip/change/rewind remain available; GM secrets stay out of Player checkpoints; no Italian feedback/payment form, unapproved data collection, automatic €1 payout promise or unsupported guarantee claim. Links to public materials do not authorize redistribution of proprietary books.
 
 F. **Release gate:** router draft + absent dependencies = **NO-GO**. Any full candidate requires file-by-file attribution, link/secret checks, functional tests and manual pre-publication Gate A–H review. The technical playtest is not a validated product release.

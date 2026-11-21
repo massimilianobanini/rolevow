@@ -9,7 +9,7 @@ Measure whether people actually enjoy RoleVow, voluntarily want to play again an
 
 ## Operating principle: ASK ONLY WHAT CANNOT BE OBSERVED
 
-Do not interrupt play with repeated surveys. Use at most **one concise optional feedback invitation** after a significant unit or explicit dissatisfaction, **once an approved English survey and privacy notice actually exist**. Until then, accept conversational feedback without inventing a form or implying data were recorded. A neutral break is not a failure claim.
+Do not interrupt play with repeated surveys. Use at most **one concise optional feedback invitation** after a significant unit or explicit dissatisfaction, using the published English survey and its privacy notice. The [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform) is available; conversational feedback must not be described as externally recorded, and no payment data should be collected in chat. A neutral break is not a failure claim.
 
 ## North Star measures
 
@@ -45,9 +45,9 @@ Count, when the log is legitimately available, corrections of rules, continuity,
 
 Measure fairness of spotlight, delay between meaningful opportunities per player, attribution errors, independent dice-mode integrity, PC knowledge leakage, absent-PC takeover, Shared Decision Commit Window friction, split-party time and the burden placed on the human host. A group score cannot be treated as each individual's score without evidence.
 
-## Future international guarantee — NOT ACTIVE
+## Active international guarantee — separate from gameplay metrics
 
-The Negative Price Ultra-Guarantee has **synthetic test parameters**, not an active public offer: €1 NET per eligible person, a single payout across both RoleVow and Divertoscopio, a €20/month and €100 lifetime GROSS ALL-IN cap including fees and FX, and host-only monetary eligibility in hosted games. A complete form submission establishes chronological priority only; manual qualification plus binding full-cost reservation is the approved internal design, subject to legal review. **No public Google Form or payout route is active.** Do not solicit payee identity, account details, private chat exports or payment methods during ordinary play. Feedback remains independent of claim submission, and claim information belongs exclusively in the later approved conditional form.
+The RoleVow Negative Price Ultra-Guarantee is **ACTIVE since 19 November 2026** under its [published terms](../guarantee/TERMS.md) and the [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform): €1 NET per eligible person, a single payout across both RoleVow and Divertoscopio, a €20/month and €100 lifetime GROSS ALL-IN cap including fees and FX, and host-only monetary eligibility in hosted games. A complete form submission establishes chronological priority only; manual qualification plus binding full-cost reservation is the approved internal design, subject to legal review. **The English form is open; payout is conditional on eligibility, manual review, available funding and a lawful workable transfer route. No payment is automatic.** Do not solicit payee identity, account details, private chat exports or payment methods during ordinary play. Feedback remains independent of claim submission, and claim information belongs only in the official approved English process described in the [privacy notice](../guarantee/PRIVACY.md).
 
 ## Iteration
 
@@ -57,4 +57,4 @@ Typical failures: excessive onboarding, unsupported rule, wrong edition, user ac
 
 ## Release and version boundary
 
-No form is active and no user identifying data are collected by this document itself. The exact RoleVow runtime and the form (if later created) must each carry independent version identifiers. A 2014 test cannot automatically certify 2024 or Daggerheart. An Italian game test cannot certify English localization. Do not present data from the Italian public guarantee as RoleVow performance.
+The official English form is active, while this document itself collects no identifying data. The exact RoleVow runtime and the currently published English form must each carry independent version identifiers. A 2014 test cannot automatically certify 2024 or Daggerheart. An Italian game test cannot certify English localization. Do not present data from the Italian public guarantee as RoleVow performance.

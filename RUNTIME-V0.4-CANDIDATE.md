@@ -28,4 +28,4 @@ Four **supplemental research-only** proposals, also defined in the complete cont
 
 **DRAFT ≠ IMPLEMENTED ≠ VALIDATED.** The candidate is available for technical testing; independent actual play remains required.
 
-The original Italian financial guarantee/feedback program is **not** carried into RoleVow. Do not expose the Italian form or state that the Negative Price Ultra-Guarantee is active. Link and policy decisions require a separate approved English release.
+The original Italian financial guarantee/feedback program is **not** carried into RoleVow. Do not expose the Italian form. RoleVow's **separate English Negative Price Ultra-Guarantee is active since 19 November 2026**, under its own [published terms](guarantee/TERMS.md), [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform) and [privacy notice](guarantee/PRIVACY.md). No automatic approval/payment or independent English gameplay validation is implied.

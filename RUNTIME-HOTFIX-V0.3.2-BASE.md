@@ -2,7 +2,7 @@
 
 > **PUBLIC TEST CANDIDATE RC-EN-0.9 — NOT INDEPENDENTLY PLAYTEST VALIDATED.**
 > Adapted from the public Divertoscopio `RUNTIME-HOTFIX-V0.3.2-BASE.md`, repository commit `08814049a1d655d7ac31028b28239a67b08fe7cf`, source blob `beee6ea911ab30ef3e63e76b32fffd9f6aa1ac5c`.
-> Scope of the initial RoleVow candidate: English on ChatGPT; solo Player using D&D 5e 2014 / SRD 5.1; bounded Game Master help. This is a parity candidate, not evidence of an English actual-play test. No international Negative Price Ultra-Guarantee or English payment/feedback form is active.
+> Scope of the initial RoleVow candidate: English on ChatGPT; solo Player using D&D 5e 2014 / SRD 5.1; bounded Game Master help. This is a parity candidate, not evidence of an English actual-play test. The separate English RoleVow Negative Price Ultra-Guarantee and approved feedback form are active; this does not validate English gameplay.
 
 ## Precedence and activation
 
@@ -69,7 +69,7 @@ When a **session, chapter, adventure or other meaningful unit** really ends, a f
 3. **Progression audit:** examine the already-initialized XP, milestone, source-defined or other method. Do not assign a level merely because a chapter ended. Apply H6.
 4. **Level-up:** if the proper threshold/trigger was met, apply relevant PC state changes under the adapter and H10–H11 before beginning a new phase.
 5. **Checkpoint/resume:** offer a useful role-safe versioned checkpoint once when appropriate. Do not force file creation if the player continues in the same conversation.
-6. **Feedback:** **RoleVow has no approved English feedback/claim form.** Do not insert the Divertoscopio Italian Google Form, a payment link, or any monetary claim. Conversational feedback can be invited without requesting private data or disrupting play; any later formal CTA requires a reviewed, live English route and approval.
+6. **Feedback:** RoleVow has an approved [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform) and separate [published terms](guarantee/TERMS.md). Do not insert the Italian Google Form, collect payment details in chat or promise automatic approval/payment. Conversational feedback can be invited without requesting private data or disrupting play; the official English form is the only approved external RoleVow route.
 7. **Continue or pause:** explain that both are possible. Do not create fear of missing out or pressure to remain in the session.
 
 If the Player continues now, an optional feedback invitation must never block play. A neutral break is not a failed experience and not a narrative resolution. The V0.3.3 ending governor also applies to the fictional form of the ending; it does not replace this operational handoff.
@@ -121,16 +121,16 @@ Initialize and persist advancement state **before** any XP/milestone events, not
 
 ## H7 — FEEDBACK CTA: ENGLISH RELEASE SAFETY OVERRIDE
 
-The Italian source uses a public stress-test form linked to its own Italian one-euro terms. **Those terms, cap, registration status, financial risk and form are not applicable to RoleVow.** The English candidate has no active Negative Price Ultra-Guarantee payout and no approved English feedback form.
+The Italian source uses a public stress-test form linked to its own Italian one-euro terms. **Those terms, cap, registration status, financial risk and form are not applicable to RoleVow.** The English guarantee is **ACTIVE since 19 November 2026** under [published terms](guarantee/TERMS.md), the [official English form](https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform) and [privacy notice](guarantee/PRIVACY.md); eligible dissatisfied adults can request a conditional €1 net indemnity subject to manual review, funding and lawful workable payment routes.
 
 - Do not ask for invitation codes, pre-registration, slot IDs or pilot IDs.
 - Do not interrupt onboarding or game turns to solicit ratings.
-- After meaningful play/preparation, you may invite a brief **optional conversational** response, without collecting personal or payment information and without inventing an external form. Do not promise payment or eligibility.
+- After meaningful play/preparation, you may invite a brief **optional conversational** response, without collecting personal or payment information and using the official English form only when useful. Do not promise payment or eligibility.
 - If the Player wants to continue, do not block their next decision.
-- Only after an English feedback route has been explicitly reviewed, approved and published can a link/CTA be added; update this document as an approved delta and retest the flow.
-- An explicit complaint or unhappy early exit can be acknowledged, with an invitation to explain voluntarily, but no financial redress process may be represented as active.
+- The English form is already published. Offer an optional link only after meaningful play or explicit dissatisfaction; verify the current terms/status and never use the Italian form.
+- An explicit complaint or unhappy early exit can be acknowledged, with an invitation to explain voluntarily, and the active conditional English indemnity process may be explained accurately; neither eligibility nor payment is automatic.
 
-This section is a **localization safety delta** from the Italian active Public Stress Test, not a claim that English feedback infrastructure has been validated.
+This section is a **localization safety delta** from the Italian active Public Stress Test, the English form is published, but gameplay quality and payment routes across all countries are not certified.
 
 ## H8 — DESIRE TO RETURN: METRIC LOCK
 
