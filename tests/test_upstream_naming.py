@@ -24,5 +24,7 @@ class UpstreamEditorialNamingTests(unittest.TestCase):
         self.assertIn('NOT EVALUATED',s)
         self.assertIn('**Daggerheart™ (unofficial experimental adapter, SRD 2.0)** | **70%** | **NOT EVALUATED**',s)
         self.assertIn('not derived from English-language measurements',s)
-        self.assertIn('Unofficial experimental adapter',src('index.html'))
+        # The landing links to the limitations; exact edition labels live at guided start.
+        self.assertIn('KNOWN-LIMITATIONS.md',src('index.html'))
+        self.assertIn('Daggerheart™ (unofficial experimental adapter, SRD 2.0)',src('BOOTSTRAP.md'))
 if __name__=='__main__':unittest.main()

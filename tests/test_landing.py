@@ -15,7 +15,7 @@ class LandingScaffoldTests(unittest.TestCase):
     def test_41_english_and_accessible_title(self):
         self.assertEqual(SITE.html['lang'],'en')
         self.assertIn('RoleVow',SITE.title.get_text())
-        self.assertEqual(SITE.select_one('a.skip')['href'],'#main')
+        self.assertEqual(SITE.select_one('a.skip-link')['href'],'#main')
 
     def test_42_active_conditional_guarantee_not_gameplay_validation(self):
         page=SITE.get_text(' ',strip=True).lower()
@@ -25,21 +25,28 @@ class LandingScaffoldTests(unittest.TestCase):
         self.assertIn('published terms',page)
 
     def test_43_canonical_battlecry(self):
-        self.assertIn("Play your role, now it's your roll. Our vow? To make you say wow.",HTML)
+        self.assertEqual(SITE.select_one('.battlecry').get_text(' ',strip=True),
+                         "Play your role, now it's your roll. Our vow? To make you say wow.")
 
-    def test_44_both_dd_and_daggerheart_disclosed(self):
-        for t in ('D&D 5e (2014)','D&D (2024)','Daggerheart','SRD 5.2.1','SRD 5.1','SRD 2.0'):
-            self.assertIn(t,HTML)
+    def test_44_supported_rulesets_disclosed_at_guided_start(self):
+        self.assertIn('KNOWN-LIMITATIONS.md',HTML)
+        bootstrap=(ROOT/'BOOTSTRAP.md').read_text('utf8')
+        for t in ('D&D 5e 2014 (SRD 5.1)', 'D&D 2024 (SRD 5.2.1)',
+                  'Daggerheart™ (unofficial experimental adapter, SRD 2.0)'):
+            self.assertIn(t,bootstrap)
 
     def test_45_hosted_not_fake_group_chat(self):
-        self.assertIn('one human host',HTML.lower())
-        self.assertIn('not</strong> a synchronized multi-account',HTML)
+        page=SITE.get_text(' ',strip=True).lower()
+        self.assertIn('one human relay host and one chat',page)
+        self.assertIn('not synchronized individual accounts',page)
 
-    def test_46_test_start_enabled_without_guarantee(self):
-        b=SITE.select_one('#copy-starter')
+    def test_46_guided_start_enabled_without_skipping_chatgpt(self):
+        b=SITE.select_one('#start-rolevow')
         self.assertIsNotNone(b)
         self.assertFalse(b.has_attr('disabled'))
-        self.assertIn('["pre-release", "released"]',JS)
+        self.assertIn('document.querySelectorAll("[data-start-rolevow]")',JS)
+        self.assertIn('navigator.clipboard.writeText',JS)
+        self.assertIn('START_PROMPT=REPO+',JS)
 
     def test_47_repository_exact_and_copy_prompt(self):
         self.assertIn('https://github.com/massimilianobanini/rolevow',JS)

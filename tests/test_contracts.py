@@ -190,7 +190,8 @@ class TechnicalIntegrityTests(unittest.TestCase):
         self.assertIn(ROLEVOW_FORM,general)
         self.assertIn('Do not send payment details',general)
         self.assertIn('No marketing opt-in is needed',policy)
-        self.assertIn('manual',terms.lower())
+        self.assertIn('the operator reviews completed requests',terms.lower())
+        self.assertIn('no payment is automatic',terms.lower())
         self.assertIn('privacy notice',terms.lower())
 
     def test_35_provisional_upstream_confidence_not_english_validation(self):
