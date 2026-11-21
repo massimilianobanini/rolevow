@@ -17,9 +17,12 @@ class LandingScaffoldTests(unittest.TestCase):
         self.assertIn('RoleVow',SITE.title.get_text())
         self.assertEqual(SITE.select_one('a.skip')['href'],'#main')
 
-    def test_42_pre_release_status_no_fictional_offer(self):
-        self.assertEqual(SITE.body.get('data-release-status'),'pre-release')
-        self.assertIn('not active',SITE.get_text(' ',strip=True).lower())
+    def test_42_active_conditional_guarantee_not_gameplay_validation(self):
+        page=SITE.get_text(' ',strip=True).lower()
+        self.assertIn('technical playtest',page)
+        self.assertIn('€1 net reputational indemnity',page)
+        self.assertIn('no automatic payment',page)
+        self.assertIn('published terms',page)
 
     def test_43_canonical_battlecry(self):
         self.assertIn("Play your role, now it's your roll. Our vow? To make you say wow.",HTML)
@@ -47,16 +50,21 @@ class LandingScaffoldTests(unittest.TestCase):
         for t in ('docs.google.com/forms','docs.google.com/document/d/','drive.google.com/file/d/','1FAIpQL'):
             self.assertNotIn(t,HTML+JS)
 
-    def test_49_no_unapproved_visual_hammer(self):
-        self.assertEqual(len(SITE.find_all('img')),0)
-        self.assertNotIn('visual-hammer',HTML.lower()+CSS.lower()+JS.lower())
+    def test_49_only_approved_visual_hammer_images(self):
+        images=SITE.find_all('img')
+        self.assertGreaterEqual(len(images),2)
+        for img in images:
+            self.assertEqual(img.get('src'),'assets/brand/rolevow-visual-hammer-transparent.png')
+        self.assertIn('RoleVow Visual Hammer',HTML)
 
     def test_50_node_syntax_and_manual_pages_only(self):
         p=subprocess.run(['node','--check',str(ROOT/'landing.js')],capture_output=True,text=True)
         self.assertEqual(p.returncode,0,p.stderr)
         y=(ROOT/'.github/workflows/landing-pages.yml').read_text('utf8')
         self.assertIn('workflow_dispatch:',y)
-        self.assertNotIn('  push:',y)
+        self.assertIn('  push:',y)
+        self.assertIn('      - index.html',y)
+        self.assertIn('      - assets/brand/rolevow-visual-hammer-transparent.png',y)
         self.assertIn('node --check landing.js',y)
 
 if __name__=='__main__':unittest.main()

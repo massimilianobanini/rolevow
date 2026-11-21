@@ -10,6 +10,7 @@ import re
 import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
+ROLEVOW_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform"
 def read(rel):return (ROOT/rel).read_text('utf-8')
 
 class EditionAndScopeGuards(unittest.TestCase):
@@ -65,9 +66,15 @@ class EditionAndScopeGuards(unittest.TestCase):
         self.assertIn('not a security boundary',s)
         self.assertIn('the host may see everything',s)
 
-    def test_61_inactive_guarantee(self):
-        for f in ['BRAND-POSITIONING.md','COME-OTTENERE-IL-MASSIMO.md']:
-            s=read(f).lower();self.assertTrue('not active' in s or 'not activated' in s or 'not a live commitment' in s or 'not an approved or live commitment' in s or 'not been designed or launched' in s or 'no financial compensation programme is active' in s)
+    def test_61_active_guarantee_separate_from_gameplay_validation(self):
+        brand=read('BRAND-POSITIONING.md')
+        guide=read('COME-OTTENERE-IL-MASSIMO.md')
+        readme=read('README.md')
+        self.assertIn('ACTIVE since 19 November 2026',brand)
+        self.assertIn(ROLEVOW_FORM,brand)
+        self.assertIn('Ultra-Guarantee is active separately',guide)
+        self.assertIn('public technical playtest',readme)
+        self.assertIn('not yet ready for public use as a validated product',readme)
 
     def test_62_world_first_unverified_not_public(self):
         s=read('BRAND-POSITIONING.md')
@@ -107,10 +114,12 @@ class EditionAndScopeGuards(unittest.TestCase):
             self.assertTrue((ROOT/f).is_file())
         s=read('COME-OTTENERE-IL-MASSIMO.md');self.assertIn('KNOWN-LIMITATIONS.md',s)
 
-    def test_68_no_private_urls_in_new_public_facing_guidance(self):
+    def test_68_no_private_urls_except_authorized_public_form(self):
         for f in ['COME-OTTENERE-IL-MASSIMO.md','CREDITS-AND-INSPIRATIONS.md','BRAND-POSITIONING.md']:
             s=read(f)
-            self.assertNotRegex(s,r'docs\.google\.com/(?:forms|document|spreadsheets)/')
+            self.assertNotRegex(s,r'docs\.google\.com/(?:document|spreadsheets)/|drive\.google\.com/file/d/')
+            for url in re.findall(r'https?://docs\.google\.com/forms/[^\s\)\]<>\"]+',s):
+                self.assertEqual(url.rstrip('.,;'),ROLEVOW_FORM,f)
             self.assertNotRegex(s,r'(?i)(?:sk-[A-Za-z0-9]{18,}|ghp_[A-Za-z0-9]{18,})')
 
     def test_69_files_are_source_locked(self):

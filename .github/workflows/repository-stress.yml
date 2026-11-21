@@ -43,7 +43,10 @@ jobs:
           grep -q 'SRD 5.1' adapters/5e-srd51/ADAPTER.md
           grep -q 'Daggerheart' adapters/dh-srd20/ADAPTER.md
           grep -qi 'hosted' multiplayer/HOSTED-PLAY.md
-          grep -q 'not active' BOOTSTRAP.md
+          # The indemnity programme is active; gameplay remains a technical playtest.
+          grep -q 'ACTIVE — launched 19 November 2026' README.md
+          grep -q 'Ultra-Guarantee is active' BOOTSTRAP.md
+          grep -q 'guarantee/TERMS.md' README.md
           node --check landing.js
       - name: Run deterministic contract regression suite
         shell: bash

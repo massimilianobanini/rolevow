@@ -11,6 +11,7 @@ import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
+ROLEVOW_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdBBYqPZkuFF0t1OeLhqHa8k2UKefT0HbHWXGabX4KDjyJuGw/viewform"
 
 def source(path):
     return (ROOT / path).read_text(encoding='utf-8')
@@ -26,7 +27,11 @@ class TechnicalIntegrityTests(unittest.TestCase):
         s=source('README.md'); self.assertIn('Pre-release',s); self.assertIn('not yet ready for public use',s)
 
     def test_02_public_test_status(self):
-        s=source('README.md');self.assertIn('public technical playtest',s);self.assertIn('No monetary programme is active',s)
+        s=source('README.md')
+        self.assertIn('public technical playtest',s)
+        self.assertIn('ACTIVE — launched 19 November 2026 (Europe/Rome)',s)
+        self.assertIn('[terms](guarantee/TERMS.md)',s)
+        self.assertNotIn('No monetary programme is active',s)
 
     def test_03_mit_git_blob_unchanged(self):
         b=(ROOT/'LICENSE').read_bytes()
@@ -143,14 +148,29 @@ class TechnicalIntegrityTests(unittest.TestCase):
         s=source('multiplayer/HOSTED-PLAY.md')
         self.assertIn('does not create separate private ChatGPT channels',s)
 
-    def test_30_no_international_guarantee(self):
-        s=source('README.md')+source('BOOTSTRAP.md')+source('feedback/FEEDBACK-AND-METRICS.md')
-        self.assertIn('not yet available',s.lower());self.assertRegex(s.lower(),r'not active|no monetary programme is active')
+    def test_30_active_guarantee_distinct_from_unvalidated_gameplay(self):
+        readme=source('README.md')
+        bootstrap=source('BOOTSTRAP.md')
+        feedback=source('feedback/FEEDBACK-AND-METRICS.md')
+        self.assertIn('ACTIVE — launched 19 November 2026',readme)
+        self.assertIn('Ultra-Guarantee is active',bootstrap)
+        self.assertIn('ACTIVE since 19 November 2026',feedback)
+        self.assertIn(ROLEVOW_FORM,readme)
+        self.assertIn(ROLEVOW_FORM,bootstrap)
+        self.assertIn('NOT INDEPENDENTLY PLAYTEST VALIDATED',feedback)
+        self.assertIn('not yet ready for public use as a validated product',readme)
+        self.assertIn('No payment is automatic',feedback)
 
-    def test_31_no_italian_payment_form_urls(self):
+    def test_31_only_authorized_english_form_no_italian_payment_urls(self):
+        italian_form_id = '1FAIpQLSc1JT6yfYhYokvZ2b1DKNeqKExl9PLGa2aMSMJGS_-XCs7ibg'
         for p in ROOT.rglob('*.md'):
-            if 'PRIVATE_QA' not in p.parts:
-                self.assertNotIn('docs.google.com/forms/',p.read_text(encoding='utf8'),p.name)
+            if 'PRIVATE_QA' in p.parts:
+                continue
+            content = p.read_text(encoding='utf8')
+            self.assertNotIn(italian_form_id,content,p.name)
+            links = re.findall(r'https?://docs\.google\.com/forms/[^\s\)\]<>\"]+',content)
+            for link in links:
+                self.assertEqual(link.rstrip('.,;'), ROLEVOW_FORM, p.name)
 
     def test_32_no_private_drive_links(self):
         for p in ROOT.rglob('*.md'):
@@ -162,8 +182,16 @@ class TechnicalIntegrityTests(unittest.TestCase):
         self.assertIn('This work includes material taken from the System Reference Document 5.1',s)
         self.assertIn('This work includes material from the System Reference Document 5.2.1',s)
 
-    def test_34_privacy_is_release_blocker(self):
-        self.assertIn('before any actual monetary intake',source('PRIVACY.md'))
+    def test_34_active_guarantee_has_separate_privacy_safeguards(self):
+        general=source('PRIVACY.md')
+        policy=source('guarantee/PRIVACY.md')
+        terms=source('guarantee/TERMS.md')
+        self.assertIn('Ultra-Guarantee is active as of 19 November 2026',general)
+        self.assertIn(ROLEVOW_FORM,general)
+        self.assertIn('Do not send payment details',general)
+        self.assertIn('No marketing opt-in is needed',policy)
+        self.assertIn('manual',terms.lower())
+        self.assertIn('privacy notice',terms.lower())
 
     def test_35_provisional_upstream_confidence_not_english_validation(self):
         s=source('SYSTEM-SUPPORT.md')
@@ -228,9 +256,11 @@ class TechnicalIntegrityTests(unittest.TestCase):
     def test_42_private_budget_rules_not_the_obsolete_planning_assumption(self):
         brand = source('BRAND-POSITIONING.md')
         feedback = source('feedback/FEEDBACK-AND-METRICS.md')
-        self.assertIn('€20 per month and €100 lifetime', brand)
-        self.assertIn('€20/month and €100 lifetime', feedback)
-        self.assertIn('NOT active', brand)
-        self.assertIn('No public Google Form', feedback.replace('**', '').replace('NO public', 'No public'))
+        self.assertIn('€20/month and €100 lifetime GROSS all-in funding ceilings',brand)
+        self.assertIn('€20/month and €100 lifetime GROSS ALL-IN cap',feedback)
+        self.assertIn('One payment per person across RoleVow and Divertoscopio',brand)
+        self.assertIn('No payment is automatic',feedback)
+        self.assertIn(ROLEVOW_FORM,brand)
+        self.assertIn('[published terms](guarantee/TERMS.md)',brand)
 
 if __name__=='__main__':unittest.main()
